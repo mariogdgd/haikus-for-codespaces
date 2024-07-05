@@ -9,12 +9,38 @@ body {
     text-align:center;
 }
 
+@keyframes mymove1 {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+@keyframes mymove2 {
+    from {left:200px;}
+    to {left: 0px;}
+  }
+    
 .mona-images {
     max-width: 400px;
     max-height: 400px;
     border: 8px solid #fff;
 }
-
+.mona-images-0{
+    position: relative;
+    animation: mymove1 3s alternate-reverse;    
+}
+.mona-images-1{
+    background-color: blue;
+    animation: mymove2 3s alternate-reverse;      
+}
+.mona-images-2{
+    background-color: chocolate;
+}
+.mona-images-3{
+    background-color: gold;
+}
+.mona-images-4{
+    background-color: hotpink;
+}
 .haiku-containers {
     padding: 10px 0px 20px 0px;
 }
